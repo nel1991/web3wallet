@@ -1,0 +1,258 @@
+/*:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+*/
+
+
+
+*{ 
+  margin:0; 
+  padding:0; 
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.inputhere{
+  display: block;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 500px;
+}
+
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #2D6BEC;
+  border-color: #2D6BEC transparent #2D6BEC transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.showaddress{
+  color: white;
+}
+.navarea{
+  background: rgb(85,55,217);
+  background: linear-gradient(90deg, rgba(85,55,217,1) 11%, rgba(34,120,240,1) 100%);
+   margin-top: 0px !important;
+   padding: 12px;
+   display: flex;
+}
+
+.logo{
+  border-radius: 10px;
+
+}
+
+.blockarea{
+  display: flex;
+  background: rgb(34,120,240);
+  background: linear-gradient(90deg, rgba(34,120,240,1) 11%, rgba(85,55,217,1) 100%);
+  padding: 50px;
+  flex-wrap: wrap;
+
+}
+
+.descriptionarea{
+  
+  display: flex;
+  flex: 0.6;
+  flex-direction: column;
+
+  justify-content: center;
+ 
+}
+
+.sendarea{
+  
+  display: flex;
+  flex: 1;
+
+
+
+}
+
+.formsend{
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.centerdescrip{
+ 
+  display: flex;
+  align-items: center;
+/*  background-color: green;*/
+
+}
+.dtext{
+  
+  /*text-align: center;*/
+  font-size: 45px;
+  color: white;
+}
+.cryptdetails{
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+.accountdetails{
+  background-color: #E3ECFB;
+  /*background: rgb(218,171,200);
+  background: linear-gradient(90deg, rgba(218,171,200,1) 11%, rgba(85,55,217,1) 100%);*/
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+.coinshere{
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+.wallethere{
+  font-size: 25px;
+}
+
+input[type=text], input[type=number] {
+  padding:10px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius:10px;
+}
+.text-white{
+  background-color: #324FDE;
+  padding: 8px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+ tr {
+ /* border: 1px solid black;*/
+   padding: 50px;
+  text-align: left;
+   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius:10px;
+
+ /* box-shadow: 0 1px 9px 1px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 0 1px 9px 1px rgba(0, 0, 0, 0.28);
+  border: none;*/
+}
+
+th, td{
+
+    padding: 15px 20px 20px 15px;
+  text-align: center;
+  /* box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius:10px;*/
+}
+
+table {
+    
+    width: 800px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+}
+.latest{
+  font-size: 30px;
+  text-align: center;
+
+}
+.home{
+ font-size: 20px;
+ color: white;
+}
+.Footer{
+  display: flex;
+  flex-wrap: wrap;
+}
+.right{
+  font-size: 15px;
+}
+
+
+/*a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+*/
